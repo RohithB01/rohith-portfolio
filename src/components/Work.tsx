@@ -5,34 +5,22 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
-    image: "/images/Solidx.png",
+    title: "Credit Card Fraud Detection",
+    category: "Machine Learning",
+    tools: "Python, Pandas, Scikit-learn, Streamlit, SMOTE",
+    image: "/images/fraud-mockup.webp", // ✅ updated
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
-    image: "/images/radix.png",
+    title: "Document Intelligence System",
+    category: "Generative AI / RAG",
+    tools: "Python, LangChain, LLMs, FAISS, Streamlit",
+    image: "/images/rag-mockup.svg", // ✅ updated
   },
   {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
-  },
-  {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    title: "Customer Churn Prediction",
+    category: "Data Analytics",
+    tools: "Python, Scikit-learn, Power BI, Streamlit",
+    image: "/images/churn-mockup.svg", // ✅ updated
   },
 ];
 

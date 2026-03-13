@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2137;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="monitorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1a26;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#00d4aa" flood-opacity="0.15"/>
+    </filter>
+    <clipPath id="screenClip">
+      <rect x="310" y="68" width="780" height="490" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="800" fill="url(#bg1)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="700" cy="500" rx="400" ry="150" fill="#00d4aa" opacity="0.04"/>
+
+  <!-- Title top -->
+  <text x="700" y="38" font-family="Arial" font-size="22" font-weight="700" fill="#00d4aa" text-anchor="middle" letter-spacing="4" filter="url(#glow1)">FRAUD DETECTION SYSTEM</text>
+  <text x="700" y="56" font-family="Arial" font-size="11" fill="#ffffff50" text-anchor="middle" letter-spacing="3">ML-POWERED REAL-TIME RISK SCORING</text>
+
+  <!-- Left side panel (behind monitor) -->
+  <rect x="42" y="130" width="280" height="420" rx="10" fill="#0d1e2e" opacity="0.9"/>
+  <rect x="42" y="130" width="280" height="420" rx="10" fill="none" stroke="#00d4aa20" stroke-width="1"/>
+  <!-- Left panel content -->
+  <rect x="52" y="140" width="260" height="28" rx="4" fill="#00d4aa15"/>
+  <text x="62" y="159" font-family="Arial" font-size="11" font-weight="bold" fill="#00d4aa">🛡 FRAUD MONITOR</text>
+  <rect x="52" y="178" width="260" height="1" fill="#ffffff10"/>
+  <text x="62" y="200" font-family="Arial" font-size="10" fill="#888">LIVE ALERTS</text>
+  <rect x="52" y="208" width="260" height="36" rx="4" fill="#ff4d4d10"/>
+  <rect x="52" y="208" width="3" height="36" rx="2" fill="#ff4d4d"/>
+  <text x="64" y="222" font-family="Arial" font-size="10" fill="#ff4d4d">⚠ TXN_7823 — HIGH RISK</text>
+  <text x="64" y="237" font-family="Arial" font-size="9" fill="#666">$4,250 • 2 secs ago</text>
+  <rect x="52" y="252" width="260" height="36" rx="4" fill="#fbbf2410"/>
+  <rect x="52" y="252" width="3" height="36" rx="2" fill="#fbbf24"/>
+  <text x="64" y="266" font-family="Arial" font-size="10" fill="#fbbf24">⚡ TXN_7819 — MEDIUM</text>
+  <text x="64" y="281" font-family="Arial" font-size="9" fill="#666">$892 • 1 min ago</text>
+  <rect x="52" y="296" width="260" height="36" rx="4" fill="#34d39910"/>
+  <rect x="52" y="296" width="3" height="36" rx="2" fill="#34d399"/>
+  <text x="64" y="310" font-family="Arial" font-size="10" fill="#34d399">✓ TXN_7817 — SAFE</text>
+  <text x="64" y="325" font-family="Arial" font-size="9" fill="#666">$120 • 2 min ago</text>
+  <text x="62" y="365" font-family="Arial" font-size="10" fill="#888">MODEL STATS</text>
+  <text x="62" y="385" font-family="Arial" font-size="10" fill="#ccc">ROC-AUC</text>
+  <rect x="62" y="390" width="200" height="6" rx="3" fill="#ffffff15"/>
+  <rect x="62" y="390" width="192" height="6" rx="3" fill="#00d4aa"/>
+  <text x="267" y="399" font-family="Arial" font-size="9" fill="#00d4aa">96%</text>
+  <text x="62" y="415" font-family="Arial" font-size="10" fill="#ccc">Recall</text>
+  <rect x="62" y="420" width="200" height="6" rx="3" fill="#ffffff15"/>
+  <rect x="62" y="420" width="184" height="6" rx="3" fill="#00d4aa90"/>
+  <text x="267" y="429" font-family="Arial" font-size="9" fill="#00d4aa">92%</text>
+  <text x="62" y="445" font-family="Arial" font-size="10" fill="#ccc">Precision</text>
+  <rect x="62" y="450" width="200" height="6" rx="3" fill="#ffffff15"/>
+  <rect x="62" y="450" width="174" height="6" rx="3" fill="#00d4aa70"/>
+  <text x="267" y="459" font-family="Arial" font-size="9" fill="#00d4aa">87%</text>
+  <text x="62" y="490" font-family="Arial" font-size="18" font-weight="bold" fill="#fff">284,807</text>
+  <text x="62" y="508" font-family="Arial" font-size="10" fill="#888">Transactions Analyzed</text>
+  <text x="180" y="490" font-family="Arial" font-size="18" font-weight="bold" fill="#ff4d4d">492</text>
+  <text x="180" y="508" font-family="Arial" font-size="10" fill="#888">Fraud Caught</text>
+
+  <!-- Right side panel (behind monitor) -->
+  <rect x="1078" y="130" width="280" height="420" rx="10" fill="#0d1e2e" opacity="0.9"/>
+  <rect x="1078" y="130" width="280" height="420" rx="10" fill="none" stroke="#00d4aa20" stroke-width="1"/>
+  <!-- Right panel content -->
+  <rect x="1088" y="140" width="260" height="28" rx="4" fill="#00d4aa15"/>
+  <text x="1098" y="159" font-family="Arial" font-size="11" font-weight="bold" fill="#00d4aa">TOOLS & STACK</text>
+  <rect x="1088" y="178" width="260" height="1" fill="#ffffff10"/>
+  <!-- Tags -->
+  <rect x="1098" y="188" width="70" height="20" rx="10" fill="#00d4aa20" stroke="#00d4aa40" stroke-width="1"/>
+  <text x="1133" y="202" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">Python</text>
+  <rect x="1178" y="188" width="80" height="20" rx="10" fill="#00d4aa20" stroke="#00d4aa40" stroke-width="1"/>
+  <text x="1218" y="202" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">Scikit-learn</text>
+  <rect x="1098" y="216" width="60" height="20" rx="10" fill="#00d4aa20" stroke="#00d4aa40" stroke-width="1"/>
+  <text x="1128" y="230" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">Pandas</text>
+  <rect x="1168" y="216" width="60" height="20" rx="10" fill="#00d4aa20" stroke="#00d4aa40" stroke-width="1"/>
+  <text x="1198" y="230" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">NumPy</text>
+  <rect x="1238" y="216" width="60" height="20" rx="10" fill="#00d4aa20" stroke="#00d4aa40" stroke-width="1"/>
+  <text x="1268" y="230" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">SMOTE</text>
+  <rect x="1098" y="244" width="70" height="20" rx="10" fill="#00d4aa20" stroke="#00d4aa40" stroke-width="1"/>
+  <text x="1133" y="258" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">Streamlit</text>
+  <rect x="1178" y="244" width="80" height="20" rx="10" fill="#00d4aa20" stroke="#00d4aa40" stroke-width="1"/>
+  <text x="1218" y="258" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">Random Forest</text>
+
+  <text x="1098" y="295" font-family="Arial" font-size="10" fill="#888">KEY RESULTS</text>
+  <rect x="1098" y="305" width="260" height="50" rx="6" fill="#ffffff05"/>
+  <text x="1110" y="322" font-family="Arial" font-size="10" fill="#ccc">✦ 96% ROC-AUC score achieved</text>
+  <text x="1110" y="338" font-family="Arial" font-size="10" fill="#ccc">✦ 92% recall on minority class</text>
+  <text x="1110" y="354" font-family="Arial" font-size="10" fill="#ccc">✦ 15% higher precision vs LR</text>
+
+  <rect x="1098" y="365" width="260" height="50" rx="6" fill="#ffffff05"/>
+  <text x="1110" y="382" font-family="Arial" font-size="10" fill="#ccc">✦ SMOTE class imbalance fix</text>
+  <text x="1110" y="398" font-family="Arial" font-size="10" fill="#ccc">✦ 284K+ real transactions</text>
+  <text x="1110" y="414" font-family="Arial" font-size="10" fill="#ccc">✦ Deployed on Streamlit</text>
+
+  <!-- Monitor outer frame -->
+  <rect x="290" y="58" width="820" height="530" rx="16" fill="#1c2533" filter="url(#shadow1)"/>
+  <rect x="295" y="63" width="810" height="520" rx="13" fill="#0a0e14"/>
+
+  <!-- Screen bezel -->
+  <rect x="308" y="66" width="784" height="494" rx="6" fill="url(#monitorGrad)"/>
+
+  <!-- Screen content clipped -->
+  <g clip-path="url(#screenClip)">
+    <!-- Screen bg -->
+    <rect x="310" y="68" width="780" height="490" fill="#0f1117"/>
+
+    <!-- Topbar -->
+    <rect x="310" y="68" width="780" height="44" fill="#161820"/>
+    <circle cx="330" cy="90" r="6" fill="#ff5f57"/>
+    <circle cx="350" cy="90" r="6" fill="#febc2e"/>
+    <circle cx="370" cy="90" r="6" fill="#28c840"/>
+    <text x="400" y="95" font-family="monospace" font-size="11" fill="#888">Fraud Detection — Streamlit App</text>
+    <rect x="880" y="78" width="80" height="24" rx="4" fill="#00d4aa20"/>
+    <text x="920" y="94" font-family="Arial" font-size="10" fill="#00d4aa" text-anchor="middle">● LIVE</text>
+
+    <!-- Sidebar -->
+    <rect x="310" y="112" width="160" height="446" fill="#12141e"/>
+    <text x="322" y="138" font-family="Arial" font-size="10" font-weight="bold" fill="#00d4aa">🛡 FRAUD DETECTOR</text>
+    <rect x="316" y="148" width="148" height="26" rx="4" fill="#00d4aa15"/>
+    <text x="326" y="165" font-family="Arial" font-size="10" fill="#00d4aa">▶ Dashboard</text>
+    <text x="326" y="191" font-family="Arial" font-size="10" fill="#666">  Predict</text>
+    <text x="326" y="211" font-family="Arial" font-size="10" fill="#666">  Metrics</text>
+    <text x="326" y="231" font-family="Arial" font-size="10" fill="#666">  Data Explorer</text>
+    <rect x="316" y="460" width="148" height="60" rx="4" fill="#00d4aa0a"/>
+    <text x="326" y="477" font-family="Arial" font-size="9" fill="#888">Model: Random Forest</text>
+    <text x="326" y="492" font-family="Arial" font-size="14" font-weight="bold" fill="#00d4aa">96% AUC</text>
+    <text x="326" y="508" font-family="Arial" font-size="9" fill="#888">92% Recall</text>
+
+    <!-- Main area -->
+    <text x="488" y="136" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">Fraud Detection Dashboard</text>
+    <text x="488" y="152" font-family="Arial" font-size="9" fill="#888">284,807 transactions • Real-time scoring</text>
+
+    <!-- KPI cards -->
+    <rect x="488" y="162" width="130" height="60" rx="5" fill="#1a1d27"/>
+    <text x="500" y="180" font-family="Arial" font-size="9" fill="#888">Total Transactions</text>
+    <text x="500" y="202" font-family="Arial" font-size="16" font-weight="bold" fill="#fff">284,807</text>
+    <text x="500" y="216" font-family="Arial" font-size="8" fill="#00d4aa">↑ full dataset</text>
+
+    <rect x="630" y="162" width="110" height="60" rx="5" fill="#1a1d27"/>
+    <text x="642" y="180" font-family="Arial" font-size="9" fill="#888">Fraud Cases</text>
+    <text x="642" y="202" font-family="Arial" font-size="16" font-weight="bold" fill="#ff4d4d">492</text>
+    <text x="642" y="216" font-family="Arial" font-size="8" fill="#ff4d4d">0.17% rate</text>
+
+    <rect x="752" y="162" width="110" height="60" rx="5" fill="#1a1d27"/>
+    <text x="764" y="180" font-family="Arial" font-size="9" fill="#888">ROC-AUC</text>
+    <text x="764" y="202" font-family="Arial" font-size="16" font-weight="bold" fill="#00d4aa">96%</text>
+    <text x="764" y="216" font-family="Arial" font-size="8" fill="#888">RF Model</text>
+
+    <rect x="874" y="162" width="110" height="60" rx="5" fill="#1a1d27"/>
+    <text x="886" y="180" font-family="Arial" font-size="9" fill="#888">Recall Score</text>
+    <text x="886" y="202" font-family="Arial" font-size="16" font-weight="bold" fill="#a78bfa">92%</text>
+    <text x="886" y="216" font-family="Arial" font-size="8" fill="#888">minority</text>
+
+    <!-- ROC Chart -->
+    <rect x="488" y="234" width="280" height="190" rx="5" fill="#1a1d27"/>
+    <text x="500" y="252" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">ROC Curve</text>
+    <line x1="510" y1="390" x2="740" y2="390" stroke="#ffffff15" stroke-width="1"/>
+    <line x1="510" y1="390" x2="510" y2="264" stroke="#ffffff15" stroke-width="1"/>
+    <line x1="510" y1="390" x2="740" y2="264" stroke="#ffffff10" stroke-width="1" stroke-dasharray="3,3"/>
+    <path d="M510,390 C540,365 560,290 590,268 C620,252 670,253 740,254" fill="none" stroke="#00d4aa" stroke-width="2"/>
+    <path d="M510,390 C550,370 590,320 640,298 C680,282 720,270 740,254" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <path d="M510,390 C540,365 560,290 590,268 C620,252 670,253 740,254 L740,390 Z" fill="#00d4aa08"/>
+    <text x="610" y="300" font-family="Arial" font-size="9" fill="#00d4aa">AUC=0.96</text>
+    <text x="650" y="330" font-family="Arial" font-size="9" fill="#a78bfa">AUC=0.81</text>
+
+    <!-- Feature importance -->
+    <rect x="780" y="234" width="210" height="190" rx="5" fill="#1a1d27"/>
+    <text x="792" y="252" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">Feature Importance</text>
+    <text x="792" y="270" font-family="Arial" font-size="9" fill="#888">V17</text>
+    <rect x="792" y="274" width="160" height="10" rx="2" fill="#00d4aa"/>
+    <text x="792" y="296" font-family="Arial" font-size="9" fill="#888">V14</text>
+    <rect x="792" y="300" width="130" height="10" rx="2" fill="#00d4aa90"/>
+    <text x="792" y="322" font-family="Arial" font-size="9" fill="#888">V12</text>
+    <rect x="792" y="326" width="100" height="10" rx="2" fill="#00d4aa70"/>
+    <text x="792" y="348" font-family="Arial" font-size="9" fill="#888">Amount</text>
+    <rect x="792" y="352" width="75" height="10" rx="2" fill="#00d4aa50"/>
+    <text x="792" y="374" font-family="Arial" font-size="9" fill="#888">Time</text>
+    <rect x="792" y="378" width="50" height="10" rx="2" fill="#00d4aa30"/>
+
+    <!-- Predict panel -->
+    <rect x="488" y="436" width="500" height="110" rx="5" fill="#1a1d27"/>
+    <text x="500" y="454" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">Live Transaction Scorer</text>
+    <rect x="500" y="462" width="110" height="22" rx="3" fill="#0f1117"/>
+    <text x="510" y="477" font-family="Arial" font-size="9" fill="#555">Amount ($)</text>
+    <rect x="620" y="462" width="110" height="22" rx="3" fill="#0f1117"/>
+    <text x="630" y="477" font-family="Arial" font-size="9" fill="#555">Time (sec)</text>
+    <rect x="740" y="462" width="110" height="22" rx="3" fill="#0f1117"/>
+    <text x="750" y="477" font-family="Arial" font-size="9" fill="#555">V1 Feature</text>
+    <rect x="860" y="462" width="116" height="22" rx="3" fill="#0f1117"/>
+    <text x="870" y="477" font-family="Arial" font-size="9" fill="#555">V2 Feature</text>
+    <rect x="500" y="492" width="476" height="26" rx="4" fill="#00d4aa"/>
+    <text x="738" y="509" font-family="Arial" font-size="10" font-weight="bold" fill="#0f1117" text-anchor="middle">🔍 Predict Fraud Risk</text>
+    <rect x="500" y="526" width="476" height="28" rx="4" fill="#ff4d4d12" stroke="#ff4d4d30" stroke-width="1"/>
+    <text x="515" y="540" font-family="Arial" font-size="10" fill="#ff4d4d">⚠ HIGH RISK — 94.2% confidence</text>
+    <text x="700" y="540" font-family="Arial" font-size="9" fill="#888">| Flagged for review</text>
+  </g>
+
+  <!-- Monitor stand neck -->
+  <rect x="670" y="588" width="60" height="60" rx="4" fill="#1a2030"/>
+  <!-- Stand base -->
+  <ellipse cx="700" cy="655" rx="120" ry="18" fill="#141c28"/>
+  <ellipse cx="700" cy="650" rx="115" ry="14" fill="#1a2535"/>
+</svg>
